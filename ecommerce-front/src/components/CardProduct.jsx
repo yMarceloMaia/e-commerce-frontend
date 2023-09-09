@@ -1,13 +1,13 @@
-
-
-function CardProduct() {
-
-
+import './CardProduct.css'
+function CardProduct({product}) {
 
     return (
-        <>
-            <h1>CardProduct</h1>
-        </>
+        <section className="section-card-product">
+            <h4>Dados do produto</h4>
+            <p>{product.code}</p>
+            <p>{product.name}</p>
+            <p>R${product.sales_price}</p>
+        </section>
     )
 }
 

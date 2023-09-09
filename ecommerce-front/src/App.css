@@ -21,3 +21,14 @@ label {
   cursor: pointer;
   margin: auto;
 }
+
+.section-buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.section-buttons button{
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}

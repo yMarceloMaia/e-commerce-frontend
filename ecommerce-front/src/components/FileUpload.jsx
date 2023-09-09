@@ -1,8 +1,7 @@
 import React from 'react';
 
-function FileUpload({setFile, setError}) {
+function FileUpload({ setFile, setError, setFileToApi }) {
 
-    
   const handleFileUpload = (event) => {
     const file = event.target.files[0]
 
@@ -11,16 +10,17 @@ function FileUpload({setFile, setError}) {
 
       reader.onload = (e) => {
         const csvContent = e.target.result
-        
+
         setFile(csvContent.split('\r\n'))
         setError(null)
+        setFileToApi(file)
       };
 
       reader.readAsText(file)
-    }else if(file && !file.type.includes("text/csv")){
+    } else if (file && !file.type.includes("text/csv")) {
       setError(`O arquivo deve ser do tipo CSV`, file && file.type)
       setFile(null)
-    }else(
+    } else (
       setFile(null)
     )
   }
