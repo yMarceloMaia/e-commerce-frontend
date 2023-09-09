@@ -75,11 +75,11 @@ Diante desse cenário, você deve construir um sistema com os seguintes requisit
 	 		o Todos os campos necessários existem? ✅ 
 			o Os códigos de produtos informados existem? ✅
 			o Os preços estão preenchidos e são valores numéricos validos.? ✅
-			o O arquivo respeita as regras levantadas na seção CENARIO? 
+			o O arquivo respeita as regras levantadas na seção CENARIO? -
 
 	• Ao final da validação o sistema deve exibir as seguintes informações dos produtos que foram enviados o Codigo, Nome, Preço Atual, Novo Preço ✅
 
-	• Caso uma ou mais regras de validação tenham sido quebradas, o sistema também deve exibir ao lado de cada produto qual regra foi quebrada. 
+	• Caso uma ou mais regras de validação tenham sido quebradas, o sistema também deve exibir ao lado de cada produto qual regra foi quebrada. -
 
 	• O sistema também deve ter um botão ATUALIZAR. Que só ficará habilitado se todos os produtos dos arquivos estiverem validados e sem regras quebradas ✅
 
